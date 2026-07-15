@@ -4,7 +4,7 @@ A website created to raise awareness about stray animals 🧡💚
 
 ## 🚀 Live Demo
 
-[Check it out here!](https://alyen28.github.io/Street-Paws/)
+[Check it out here!](https://street-paws.netlify.app/)
 
 ## 🛠️ Built With
 
