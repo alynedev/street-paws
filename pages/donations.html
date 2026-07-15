@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,10 +17,10 @@
 
   <body>
     <div>
-      <header id="header">
-        <nav id="navbar">
+      <header">
+        <nav class="navbar" id="navbar">
           <img
-            id="navbarLogo"
+            class="navbarLogo"
             src="/assets/images/logo2.png"
             alt="A text saying 'Street Paws' with the icon of an animal's paw on the right"
             loading="lazy"
@@ -32,12 +32,12 @@
             <li class="other">
               <a href="/pages/help.html">Como Ajudar</a>
             </li>
-            <li id="donations" class="button">
-              <a href="#hero-container2">Doe Agora</a>
+            <li id="donations" class="button donations-button">
+              <a href="#secondary-hero">Doe Agora</a>
             </li>
           </ul>
         </nav>
-        <div id="hero-container2">
+        <div id="secondary-hero" class="secondary-hero">
           <img
             class="hero-image2"
             src="/assets/images/dog.jpg"
@@ -66,7 +66,7 @@
           preventivas focadas em educação e sensibilização sobre os direitos dos
           animais.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -82,7 +82,7 @@
           lares seguros em São Paulo e no ABC (Santo André, São Bernardo e São
           Caetano).
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -102,7 +102,7 @@
           O Abrigo Fauna e Flora acolhe cães e gatos em situação de risco,
           vítimas de abandono ou maus-tratos.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -117,7 +117,7 @@
           O Instituto Caramelo atua principalmente no resgate de animais feridos
           ou em situação de risco, recuperação e adoção.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -136,7 +136,7 @@
           número possível de animais das ruas, dar tratamento adequado e
           integrá-los a famílias que lhes deem amor, carinho e uma vida digna.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -152,7 +152,7 @@
           Humanitária de Proteção e Bem-Estar Animal - inauguraram uma nova era
           de esperança e respeito aos direitos dos animais no país.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -173,7 +173,7 @@
           saúde, além de investir em educar a população sobre os direitos dos
           animais e a posse responsável.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -191,7 +191,7 @@
           física e emocional de cães e gatos vítimas de abandono e maus tratos e
           posterior encaminhamento para adoção.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -211,7 +211,7 @@
           ONG com o objetivo de resgatar animais em situação crítica e achar um
           lar responsável para eles.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -228,7 +228,7 @@
           Se dedica desde 2012 em atividades de proteção, ajuda, e procura de
           lares para cães da Grande São Paulo.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -246,7 +246,7 @@
           O projeto ajuda protetores independentes que abrigam animais
           abandonados e resgatados de situações de risco.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -261,7 +261,7 @@
           Gatópoles tem como objetivo encaminhar para famílias responsáveis
           gatos retirados das mais diversas situações críticas.
         </p>
-        <button id="know-more">
+        <button id="know-more" class="button know-more">
           <a
             style="text-decoration: none; color: #f3ecce"
             ;
@@ -272,7 +272,7 @@
       </div>
     </div>
 
-    <div id="contact-section">
+    <div class="contact-section">
       <h2 class="title2">Entre em contato!</h2>
       <form>
         <label>
@@ -302,7 +302,9 @@
           ></textarea>
         </label>
       </form>
-      <button id="sendButton" class="button" type="submit">Enviar</button>
+      <button id="sendButton" class="button send-button" type="submit">
+        Enviar
+      </button>
       <p class="copy">&copy; 2026 | Street Paws</p>
     </div>
   </body>

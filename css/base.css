@@ -1,0 +1,20 @@
+/* SECTIONING TAGS */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  width: -webkit-fill-available;
+}
+
+body {
+  background-color: #fef8de;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+/* COLOR VARIABLES */
+:root {
+}

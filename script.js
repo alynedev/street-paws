@@ -4,7 +4,7 @@ const factList = [
   "Estima-se que de 4 a 5 milhões de cães de rua são sacrificados (eutanasiados) a cada ano no mundo.",
 ];
 const fact = document.getElementById("fact");
-const factButton = document.getElementById("factButton");
+const factButton = document.getElementById("fact-button");
 let count = 0;
 
 function displayFact() {

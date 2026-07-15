@@ -9,7 +9,7 @@
       name="description"
       content="Website para apoiar a causa animal, com informações sobre animais em situação de rua, formas de ajudar e apoio a ONGs que lutam pela causa."
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,26 +21,26 @@
 
   <body>
     <div>
-      <header id="header">
-        <nav id="navbar">
+      <header>
+        <nav class="navbar" id="navbar">
           <img
-            id="navbarLogo"
+            class="navbarLogo"
             src="assets/images/logo2.png"
             alt="Street Paws logo"
           />
           <ul class="nav-links">
             <li class="other">
-              <a href="#hero-container1">Início</a>
+              <a href="#main-hero">Início</a>
             </li>
             <li class="other">
               <a href="pages/help.html">Como Ajudar</a>
             </li>
-            <li id="donations" class="button">
+            <li id="donations" class="button donations-button">
               <a href="pages/donations.html">Doe Agora</a>
             </li>
           </ul>
         </nav>
-        <div id="hero-container1">
+        <div id="main-hero" class="main-hero">
           <img
             class="hero-image1"
             src="assets/images/hero-image.jpg"
@@ -63,7 +63,7 @@
       </p>
 
       <div class="cards-container">
-        <div class="flex-item">
+        <div class="card">
           <a href="pages/help.html"
             ><img
               class="filler"
@@ -75,7 +75,7 @@
             <p>Pequenas ações salvam grandes vidas</p>
           </a>
         </div>
-        <div class="flex-item">
+        <div class="card">
           <a href="pages/donations.html"
             ><img
               class="filler"
@@ -91,12 +91,12 @@
       <h1 class="title1">Os dados não mentem</h1>
       <p class="subtitle">Clique para saber mais sobre o problema</p>
       <div class="fact-container">
-        <button id="factButton" class="button">Fatos</button>
-        <p id="fact"></p>
+        <button id="fact-button" class="button fact-button">Fatos</button>
+        <p id="fact" class="fact"></p>
       </div>
     </main>
 
-    <footer id="contact-section">
+    <footer class="contact-section">
       <h2 class="title2">Entre em contato!</h2>
       <form>
         <label>
@@ -126,7 +126,9 @@
           ></textarea>
         </label>
       </form>
-      <button id="sendButton" type="submit" class="button">Enviar</button>
+      <button id="send-button" type="submit" class="button send-button">
+        Enviar
+      </button>
       <p class="copy">&copy; 2026 | Street Paws</p>
     </footer>
   </body>

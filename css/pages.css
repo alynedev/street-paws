@@ -1,0 +1,50 @@
+/* INDEX.HMTL */
+.intro-text {
+  margin-top: 10%;
+  text-align: center;
+  font-size: clamp(1.2em, 2.5vw, 2.5em);
+}
+
+.fact-container {
+  background-color: #df9e42;
+  margin-top: 2%;
+  margin-bottom: 12%;
+  text-align: center;
+  padding: 4%;
+  height: 12%;
+}
+
+.title1 {
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: #588d40;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: clamp(1.4em, 2.2vw, 2.5em);
+  margin-top: 8px;
+}
+
+.fact {
+  text-align: center;
+  font-size: clamp(1.4em, 2.4vw, 2.4em);
+  margin-top: 3%;
+  color: #fef8de;
+}
+
+/* HELP.HTML */
+
+/* DONATIONS.HTML */
+.list {
+  margin: 20px;
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+}
+
+.donations-link {
+  color: #588d40;
+  transition: 0.4s;
+}
+.donations-link:hover {
+  color: #df9e42;
+}

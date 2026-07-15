@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
     <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,10 +17,10 @@
 
   <body>
     <div>
-      <header id="header">
-        <nav id="navbar">
+      <header">
+        <nav class="navbar" id="navbar">
           <img
-            id="navbarLogo"
+            class="navbarLogo"
             src="/assets/images/logo2.png"
             alt="A text saying 'Street Paws' with the icon of an animal's paw on the right"
             loading="lazy"
@@ -30,14 +30,14 @@
               <a href="/index.html">Início</a>
             </li>
             <li class="other">
-              <a href="#hero-container2">Como Ajudar</a>
+              <a href="#secondary-hero">Como Ajudar</a>
             </li>
-            <li id="donations" class="button">
+            <li id="donations" class="button donations-button">
               <a href="/pages/donations.html">Doe Agora</a>
             </li>
           </ul>
         </nav>
-        <div id="hero-container2">
+        <div id="secondary-hero" class="secondary-hero">
           <img
             class="hero-image2"
             src="/assets/images/cats.jpg"
@@ -158,7 +158,7 @@
       />
       <div class="content">
         <h1 style="font-size: clamp(1.8rem, 2vw, 2.2rem)">
-          <a class="donation-link" href="donations.html"
+          <a class="donations-link" href="donations.html"
             >Apoie quem já está lutando pela causa</a
           >
         </h1>
@@ -178,7 +178,7 @@
       </div>
     </div>
 
-    <div id="contact-section">
+    <div class="contact-section">
       <h2 class="title2">Entre em contato!</h2>
       <form>
         <label>
@@ -208,7 +208,9 @@
           ></textarea>
         </label>
       </form>
-      <button id="sendButton" class="button" type="submit">Enviar</button>
+      <button id="send-button" class="button send-button" type="submit">
+        Enviar
+      </button>
       <p class="copy">&copy; 2026 | Street Paws</p>
     </div>
   </body>
