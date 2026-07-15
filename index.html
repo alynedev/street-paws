@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <title>STREET PAWS</title>
+    <title>Street Paws</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A website about stray animals. Divided in 3 pages: 'Início', 'Como Ajudar' and 'Doe Agora' and a Contact section"
+      content="Website para apoiar a causa animal, com informações sobre animais em situação de rua, formas de ajudar e apoio a ONGs que lutam pela causa."
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,31 +25,27 @@
         <nav id="navbar">
           <img
             id="navbarLogo"
-            src="assets/logo2.png"
-            alt="A text saying 'Street Paws' with the icon of an animal's paw on the right"
-            loading="lazy"
+            src="assets/images/logo2.png"
+            alt="Street Paws logo"
           />
-          <ul>
+          <ul class="nav-links">
             <li class="other">
               <a href="#hero-container1">Início</a>
             </li>
             <li class="other">
-              <a href="#contact-section">Contato</a>
+              <a href="pages/help.html">Como Ajudar</a>
             </li>
-            <li class="other">
-              <a href="help.html">Como Ajudar</a>
-            </li>
-            <li id="donations">
-              <a href="donations.html">Doe Agora</a>
+            <li id="donations" class="button">
+              <a href="pages/donations.html">Doe Agora</a>
             </li>
           </ul>
         </nav>
         <div id="hero-container1">
           <img
             class="hero-image1"
-            src="assets/hero-image.jpg"
+            src="assets/images/hero-image.jpg"
             alt="dois cachorros filhotes deitados em uma rua empoeirada"
-            loading="lazy"
+            loading="eager"
           />
           <div class="hero-text1">
             <h1>Ajudar um animal é mudar o mundo dele</h1>
@@ -67,38 +64,39 @@
 
       <div class="cards-container">
         <div class="flex-item">
-          <a href="help.html"
+          <a href="pages/help.html"
             ><img
               class="filler"
-              src="assets/cats.jpg"
+              src="assets/images/cats.jpg"
               alt="dois gatinhos
             comendo ração do chão"
               loading="lazy"
             />
+            <p>Pequenas ações salvam grandes vidas</p>
           </a>
-          <a href="help.html">Pequenas ações salvam grandes vidas</a>
         </div>
         <div class="flex-item">
-          <a href="donations.html"
+          <a href="pages/donations.html"
             ><img
               class="filler"
-              src="assets/dog.jpg"
+              src="assets/images/dog.jpg"
               alt="cachorro em um abrigo sendo acariciado"
               loading="lazy"
-          /></a>
-          <a href="donations.html">Apoie organizações que lutam pela causa</a>
+            />
+            <p>Apoie organizações que lutam pela causa</p>
+          </a>
         </div>
       </div>
 
       <h1 class="title1">Os dados não mentem</h1>
       <p class="subtitle">Clique para saber mais sobre o problema</p>
       <div class="fact-container">
-        <button id="factButton">Fatos</button>
+        <button id="factButton" class="button">Fatos</button>
         <p id="fact"></p>
       </div>
     </main>
 
-    <div id="contact-section">
+    <footer id="contact-section">
       <h2 class="title2">Entre em contato!</h2>
       <form>
         <label>
@@ -128,9 +126,8 @@
           ></textarea>
         </label>
       </form>
-      <button id="sendButton" type="submit">Enviar</button>
-      <p class="copy">&copy; 2025 | Street Paws</p>
-    </div>
-    <script src="script.js"></script>
+      <button id="sendButton" type="submit" class="button">Enviar</button>
+      <p class="copy">&copy; 2026 | Street Paws</p>
+    </footer>
   </body>
 </html>

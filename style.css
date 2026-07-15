@@ -20,6 +20,69 @@ main {
   margin-right: 5%;
 }
 
+/* STYLE NAVBAR */
+#navbar {
+  background-color: #df9e42;
+  overflow: hidden;
+  padding: 1.6em;
+  padding-bottom: 1.6em;
+  text-align: right;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+#navbarLogo {
+  max-width: 105px;
+  min-width: 105px;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  margin-left: 0.8em;
+}
+
+.other {
+  display: inline;
+  list-style-type: none;
+}
+
+#donations {
+  display: inline;
+  list-style-type: none;
+  margin-left: 1em;
+  padding: 1em 0.2em;
+}
+
+#donations:hover {
+  background-color: #588d40;
+}
+
+li a {
+  text-decoration: none;
+  color: #fef8de;
+  padding: 1em;
+  font-size: clamp(0.9em, 1.4vw, 1.2em);
+  transition-duration: 0.4s;
+}
+
+li a:hover {
+  font-size: clamp(0.94em, 1.4vw, 1.24em);
+}
+
+/* STYLE CONTAINERS */
+#hero-container1 {
+  position: relative;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+}
+
+#hero-container2 {
+  display: flex;
+  align-items: flex-start;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: nowrap;
@@ -78,6 +141,34 @@ main {
 }
 
 /* STYLE TEXT */
+.hero-text1 {
+  position: absolute;
+  bottom: 0;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  backdrop-filter: blur(3px);
+}
+
+.hero-text2 {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  color: #588d40;
+  position: relative;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 88px;
+}
+
+.hero-text2 p {
+  color: black;
+}
 
 .intro-text {
   margin-top: 10%;
@@ -174,6 +265,20 @@ label textarea {
 }
 
 /* STYLE IMAGES */
+.hero-image1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 68px;
+}
+
+.hero-image2 {
+  width: 50%;
+  height: 50%;
+  margin-right: 10px;
+  margin-top: 68px;
+}
+
 .flex-item {
   flex-basis: 100%;
   margin: 1%;
@@ -209,103 +314,41 @@ label textarea {
   margin-left: 30px;
 }
 
-/* STYLE NAVBAR */
-#navbar {
-  list-style-type: none;
-  background-color: #df9e42;
-  overflow: hidden;
-  padding: 1.5em;
-  padding-bottom: 1.6em;
-  text-align: right;
-  position: fixed;
-  z-index: 10;
-  box-shadow: 5px 0 15px rgb(49, 47, 47);
-}
-
-#donations {
-  padding: 1em 0.5em;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #fef8de;
-  margin-left: 1em;
-  transition-duration: 0.4s;
-  display: inline;
-}
-
-#donations:hover {
-  background-color: #588d40;
-}
-
-.other {
-  display: inline;
-}
-
-#navbarLogo {
-  max-width: 105px;
-  min-width: 105px;
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  margin-left: 0.8em;
-}
-
-li a {
-  text-decoration: none;
-  color: #fef8de;
-  padding: 1em;
-  font-size: clamp(0.9em, 1.3vw, 1.2em);
-  transition-duration: 0.4s;
-}
-
-li a:hover {
-  font-size: clamp(1em, 1.36vw, 1.3em);
-  transition-duration: 0.4s;
-}
-
 /* STYLE BUTTONS */
+.button {
+  padding: 0.6em 0.8em;
+  border: 3px solid #fef8de;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  color: #fef8de;
+}
+
 #factButton {
   max-width: 180px;
   height: auto;
-  padding: 0.6em;
   font-size: clamp(1.2em, 1.8vw, 1.6em);
   background-color: #df9e42;
-  color: #fef8de;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #fef8de;
-  transition-duration: 0.4s;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  cursor: pointer;
 }
 
 #factButton:hover {
   font-size: clamp(1.3em, 1.9vw, 1.7em);
   background-color: #588d40;
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 #sendButton {
   max-width: 180px;
   height: auto;
   margin-top: 2%;
-  padding: 0.6em;
   font-size: clamp(1.2em, 1.8vw, 1.6em);
   background-color: #588d40;
-  color: #fef8de;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #fef8de;
-  transition-duration: 0.4s;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  cursor: pointer;
 }
 
 #sendButton:hover {
   font-size: clamp(1.3em, 1.9vw, 1.7em);
   background-color: #df9e42;
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 #know-more {
@@ -328,66 +371,6 @@ li a:hover {
   font-size: clamp(1.3em, 1.9vw, 1.5em);
   background-color: #588d40;
   transition-duration: 0.4s;
-}
-
-/* STYLE HERO IMAGE */
-#hero-container1 {
-  position: relative;
-  text-align: left;
-  color: white;
-  overflow: hidden;
-}
-
-.hero-item {
-  flex-basis: 100%;
-}
-
-.hero-image1 {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 68px;
-}
-
-.hero-text1 {
-  position: absolute;
-  bottom: 0;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  color: white;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.3);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  backdrop-filter: blur(3px);
-}
-
-#hero-container2 {
-  display: flex;
-  align-items: flex-start;
-}
-
-.hero-image2 {
-  width: 50%;
-  height: 50%;
-  margin-right: 10px;
-  margin-top: 68px;
-}
-
-.hero-text2 {
-  font-size: clamp(1rem, 2vw, 1.8rem);
-  color: #588d40;
-  position: relative;
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 88px;
-}
-
-.hero-text2 p {
-  color: black;
 }
 
 /* MEDIA */
