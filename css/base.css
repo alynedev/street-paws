@@ -1,20 +1,87 @@
-/* SECTIONING TAGS */
-html {
-  scroll-behavior: smooth;
+/* Tokens */
+:root {
+  --color-page: #fef8de;
+  --color-surface: #f8e5c0;
+  --color-primary: #df9e42;
+  --color-secondary: #588d40;
+  --color-text-dark: #111111;
+  --color-text-light: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+
+  --transition: 0.4s ease;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  width: -webkit-fill-available;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #fef8de;
+  margin: 0;
+  background-color: var(--color-page);
+  color: var(--color-text-dark);
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
 }
 
-/* COLOR VARIABLES */
-:root {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+fieldset {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-text-light);
+  outline-offset: 4px;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

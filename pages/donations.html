@@ -1,311 +1,328 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <title>Street Paws</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
-    <script src="/script.js" defer></script>
+    <title>Doações | Street Paws</title>
+    <meta
+      name="description"
+      content="Conheça organizações de proteção animal e veja onde apoiar projetos que resgatam, tratam e acolhem cães e gatos."
+    />
+    <meta property="og:title" content="Doações | Street Paws" />
+    <meta
+      property="og:description"
+      content="Apoie organizações que atuam no cuidado e na proteção de animais."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../assets/images/dog.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anta&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="../script.js" defer></script>
   </head>
 
   <body>
-    <div>
-      <header">
-        <nav class="navbar" id="navbar">
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          class="navbar__logo"
+          href="../index.html"
+          aria-label="Street Paws - início"
+        >
           <img
-            class="navbarLogo"
-            src="/assets/images/logo2.png"
-            alt="A text saying 'Street Paws' with the icon of an animal's paw on the right"
-            loading="lazy"
+            class="site-logo"
+            src="../assets/images/logo2.png"
+            alt="Street Paws"
+            width="1920"
+            height="1280"
+            decoding="async"
           />
-          <ul>
-            <li class="other">
-              <a href="/index.html">Início</a>
-            </li>
-            <li class="other">
-              <a href="/pages/help.html">Como Ajudar</a>
-            </li>
-            <li id="donations" class="button donations-button">
-              <a href="#secondary-hero">Doe Agora</a>
-            </li>
-          </ul>
-        </nav>
-        <div id="secondary-hero" class="secondary-hero">
-          <img
-            class="hero-image2"
-            src="/assets/images/dog.jpg"
-            alt="cachorro em um abrigo sendo acariciado"
-            loading="lazy"
-          />
-          <div class="hero-text2">
-            <h1 style="margin-bottom: 40px">
-              Apoie organizações que lutam pela causa
-            </h1>
-            <p>
-              Conheça o trabalho de algumas instituições nacionais e
-              internacionais que melhoram a vida dos animais a cada dia e
-              descubra como você pode ajudar diretamente!
-            </p>
-          </div>
+        </a>
+        <ul class="navbar__list">
+          <li>
+            <a class="navbar__link" href="../index.html">Início</a>
+          </li>
+          <li>
+            <a class="navbar__link" href="help.html">Como Ajudar</a>
+          </li>
+          <li>
+            <a class="button button--nav" href="#donations" aria-current="page">
+              Doe Agora
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section
+        id="donations"
+        class="hero hero--split"
+        aria-labelledby="donations-title"
+      >
+        <img
+          class="hero__image hero__image--split"
+          src="../assets/images/dog.jpg"
+          alt="Cachorro em um abrigo sendo acariciado"
+          width="7952"
+          height="5304"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hero__content hero__content--split">
+          <h1 id="donations-title">Apoie organizações que lutam pela causa</h1>
+          <p>
+            Conheça o trabalho de algumas instituições nacionais e
+            internacionais que melhoram a vida dos animais a cada dia e descubra
+            como você pode ajudar diretamente!
+          </p>
         </div>
-      </header>
-    </div>
+      </section>
+    </header>
 
-    <div class="content-container1">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Ampara Animal</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          O Ampara Animal transforma a sociedade através de ações ativas e
-          preventivas focadas em educação e sensibilização sobre os direitos dos
-          animais.
-        </p>
-        <button id="know-more" class="button know-more">
+    <main aria-label="Organizações para apoiar">
+      <section class="band band--alt grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Ampara Animal</h2>
+          <p class="org-card__text">
+            O Ampara Animal transforma a sociedade através de ações ativas e
+            preventivas focadas em educação e sensibilização sobre os direitos
+            dos animais.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://institutoamparanimal.org.br/doacao/"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Adote Um Gatinho</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          O Adote Um Gatinho, AUG, resgata, trata, castra e doa gatinhos para
-          lares seguros em São Paulo e no ABC (Santo André, São Bernardo e São
-          Caetano).
-        </p>
-        <button id="know-more" class="button know-more">
+            Saiba Mais
+          </a>
+        </article>
+
+        <article class="org-card">
+          <h2 class="org-card__title">Adote Um Gatinho</h2>
+          <p class="org-card__text">
+            O Adote Um Gatinho, AUG, resgata, trata, castra e doa gatinhos para
+            lares seguros em São Paulo e no ABC (Santo André, São Bernardo e São
+            Caetano).
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://adoteumgatinho.org.br/quero-ajudar-a-aug"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
+      </section>
 
-    <div class="content-container2">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">
-          Abrigo Fauna e Flora
-        </h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          O Abrigo Fauna e Flora acolhe cães e gatos em situação de risco,
-          vítimas de abandono ou maus-tratos.
-        </p>
-        <button id="know-more" class="button know-more">
+      <section class="band grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Abrigo Fauna e Flora</h2>
+          <p class="org-card__text">
+            O Abrigo Fauna e Flora acolhe cães e gatos em situação de risco,
+            vítimas de abandono ou maus-tratos.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://www.abrigofloraefauna.org.br/como-ajudar"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Instituto Caramelo</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          O Instituto Caramelo atua principalmente no resgate de animais feridos
-          ou em situação de risco, recuperação e adoção.
-        </p>
-        <button id="know-more" class="button know-more">
+            Saiba Mais
+          </a>
+        </article>
+
+        <article class="org-card">
+          <h2 class="org-card__title">Instituto Caramelo</h2>
+          <p class="org-card__text">
+            O Instituto Caramelo atua principalmente no resgate de animais
+            feridos ou em situação de risco, recuperação e adoção.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://institutocaramelo.org/doe"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
+      </section>
 
-    <div class="content-container1">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Cão Sem Dono</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Nasceu de um grande sonho do seu atual presidente: tirar o maior
-          número possível de animais das ruas, dar tratamento adequado e
-          integrá-los a famílias que lhes deem amor, carinho e uma vida digna.
-        </p>
-        <button id="know-more" class="button know-more">
+      <section class="band band--alt grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Cão Sem Dono</h2>
+          <p class="org-card__text">
+            Nasceu de um grande sonho do seu atual presidente: tirar o maior
+            número possível de animais das ruas, dar tratamento adequado e
+            integrá-los a famílias que lhes deem amor, carinho e uma vida digna.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://www.caosemdono.com.br/doacoes"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Arca Brasil</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Os projetos, eventos e outras ações da ARCA BRASIL - Associação
-          Humanitária de Proteção e Bem-Estar Animal - inauguraram uma nova era
-          de esperança e respeito aos direitos dos animais no país.
-        </p>
-        <button id="know-more" class="button know-more">
+            Saiba Mais
+          </a>
+        </article>
+
+        <article class="org-card">
+          <h2 class="org-card__title">Arca Brasil</h2>
+          <p class="org-card__text">
+            Os projetos, eventos e outras ações da ARCA BRASIL - Associação
+            Humanitária de Proteção e Bem-Estar Animal - inauguraram uma nova
+            era de esperança e respeito aos direitos dos animais no país.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://arcabrasil.org.br/doar/"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
+      </section>
 
-    <div class="content-container2">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">
-          Associação Quatro Patinhas
-        </h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Projeto focado em resgatar animais em situação de risco e promover sua
-          saúde, além de investir em educar a população sobre os direitos dos
-          animais e a posse responsável.
-        </p>
-        <button id="know-more" class="button know-more">
+      <section class="band grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Associação Quatro Patinhas</h2>
+          <p class="org-card__text">
+            Projeto focado em resgatar animais em situação de risco e promover
+            sua saúde, além de investir em educar a população sobre os direitos
+            dos animais e a posse responsável.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://quatropatinhas.com.br/4P/quero-ajudar/"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">
-          Projeto Segunda Chance
-        </h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Associação de Proteção Animal que realiza o trabalho de recuperação
-          física e emocional de cães e gatos vítimas de abandono e maus tratos e
-          posterior encaminhamento para adoção.
-        </p>
-        <button id="know-more" class="button know-more">
+            Saiba Mais
+          </a>
+        </article>
+
+        <article class="org-card">
+          <h2 class="org-card__title">Projeto Segunda Chance</h2>
+          <p class="org-card__text">
+            Associação de Proteção Animal que realiza o trabalho de recuperação
+            física e emocional de cães e gatos vítimas de abandono e maus tratos
+            e posterior encaminhamento para adoção.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://projetosegundachance.org.br/doe"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
+      </section>
 
-    <div class="content-container1">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">
-          Clube dos Vira-Latas
-        </h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          ONG com o objetivo de resgatar animais em situação crítica e achar um
-          lar responsável para eles.
-        </p>
-        <button id="know-more" class="button know-more">
+      <section class="band band--alt grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Clube dos Vira-Latas</h2>
+          <p class="org-card__text">
+            ONG com o objetivo de resgatar animais em situação crítica e achar
+            um lar responsável para eles.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://clubedosviralatas.org.br/como-ajudar"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">
-          Vira Lata Vira Amigo
-        </h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Se dedica desde 2012 em atividades de proteção, ajuda, e procura de
-          lares para cães da Grande São Paulo.
-        </p>
-        <button id="know-more" class="button know-more">
+            Saiba Mais
+          </a>
+        </article>
+
+        <article class="org-card">
+          <h2 class="org-card__title">Vira Lata Vira Amigo</h2>
+          <p class="org-card__text">
+            Se dedica desde 2012 em atividades de proteção, ajuda, e procura de
+            lares para cães da Grande São Paulo.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://viralataviraamigo.org.br/#doacao"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
+      </section>
 
-    <div class="content-container2">
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Cão Sem Fome</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          O projeto ajuda protetores independentes que abrigam animais
-          abandonados e resgatados de situações de risco.
-        </p>
-        <button id="know-more" class="button know-more">
+      <section class="band grid grid--orgs">
+        <article class="org-card">
+          <h2 class="org-card__title">Cão Sem Fome</h2>
+          <p class="org-card__text">
+            O projeto ajuda protetores independentes que abrigam animais
+            abandonados e resgatados de situações de risco.
+          </p>
           <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
+            class="button button--external"
             href="https://projetocaosemfome.com/apadrinhamento/"
-            >Saiba Mais</a
           >
-        </button>
-      </div>
-      <div class="content0" style="margin-right: 40px">
-        <h1 style="margin-bottom: 20px; color: #588d40">Gatópoles</h1>
-        <p style="font-size: clamp(1rem, 1.4vw, 1.5rem)">
-          Gatópoles tem como objetivo encaminhar para famílias responsáveis
-          gatos retirados das mais diversas situações críticas.
-        </p>
-        <button id="know-more" class="button know-more">
-          <a
-            style="text-decoration: none; color: #f3ecce"
-            ;
-            href="https://gatopoles.com.br/doacoes.php"
-            >Saiba Mais</a
-          >
-        </button>
-      </div>
-    </div>
+            Saiba Mais
+          </a>
+        </article>
 
-    <div class="contact-section">
-      <h2 class="title2">Entre em contato!</h2>
-      <form>
-        <label>
-          Seu nome:
-          <input
-            type="text"
-            name="name"
-            placeholder="Insira seu nome"
-            required
-          />
-        </label>
-        <label>
-          Seu email:
-          <input
-            type="email"
-            name="email"
-            placeholder="Insira seu melhor e-mail"
-            required
-          />
-        </label>
-        <label>
-          Sua mensagem:
-          <textarea
-            name="message"
-            placeholder="Insira sua mensagem"
-            required
-          ></textarea>
-        </label>
+        <article class="org-card">
+          <h2 class="org-card__title">Gatópoles</h2>
+          <p class="org-card__text">
+            Gatópoles tem como objetivo encaminhar para famílias responsáveis
+            gatos retirados das mais diversas situações críticas.
+          </p>
+          <a
+            class="button button--external"
+            href="https://gatopoles.com.br/doacoes.php"
+          >
+            Saiba Mais
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="footer__title">Entre em contato!</h2>
+      <form class="contact-form">
+        <fieldset>
+          <legend class="visually-hidden">Formulário de contato</legend>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-name"
+              >Seu nome:</label
+            >
+            <input
+              id="contact-name"
+              class="form-field__control"
+              type="text"
+              name="name"
+              placeholder="Insira seu nome"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-email"
+              >Seu email:</label
+            >
+            <input
+              id="contact-email"
+              class="form-field__control"
+              type="email"
+              name="email"
+              placeholder="Insira seu melhor e-mail"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-message">
+              Sua mensagem:
+            </label>
+            <textarea
+              id="contact-message"
+              class="form-field__control form-field__control--textarea"
+              name="message"
+              placeholder="Insira sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button--send" type="button">Enviar</button>
+        </fieldset>
       </form>
-      <button id="sendButton" class="button send-button" type="submit">
-        Enviar
-      </button>
-      <p class="copy">&copy; 2026 | Street Paws</p>
-    </div>
+      <p class="footer__copy">&copy; 2026 | Street Paws</p>
+    </footer>
   </body>
 </html>

@@ -1,135 +1,189 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <title>Street Paws</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Street Paws | Apoio aos animais de rua</title>
     <meta
       name="description"
-      content="Website para apoiar a causa animal, com informações sobre animais em situação de rua, formas de ajudar e apoio a ONGs que lutam pela causa."
+      content="Conheça a causa dos animais em situação de rua, veja formas de ajudar e apoie organizações que trabalham pela proteção animal."
     />
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <script src="/script.js" defer></script>
+    <meta
+      property="og:title"
+      content="Street Paws | Apoio aos animais de rua"
+    />
+    <meta
+      property="og:description"
+      content="Informação, cuidado e apoio para transformar a vida de animais abandonados."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/hero-image.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anta&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <div>
-      <header>
-        <nav class="navbar" id="navbar">
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a class="navbar__logo" href="#home" aria-label="Street Paws - início">
           <img
-            class="navbarLogo"
+            class="site-logo"
             src="assets/images/logo2.png"
-            alt="Street Paws logo"
+            alt="Street Paws"
+            width="1920"
+            height="1280"
+            decoding="async"
           />
-          <ul class="nav-links">
-            <li class="other">
-              <a href="#main-hero">Início</a>
-            </li>
-            <li class="other">
-              <a href="pages/help.html">Como Ajudar</a>
-            </li>
-            <li id="donations" class="button donations-button">
-              <a href="pages/donations.html">Doe Agora</a>
-            </li>
-          </ul>
-        </nav>
-        <div id="main-hero" class="main-hero">
-          <img
-            class="hero-image1"
-            src="assets/images/hero-image.jpg"
-            alt="dois cachorros filhotes deitados em uma rua empoeirada"
-            loading="eager"
-          />
-          <div class="hero-text1">
-            <h1>Ajudar um animal é mudar o mundo dele</h1>
-          </div>
+        </a>
+        <ul class="navbar__list">
+          <li>
+            <a class="navbar__link" href="#home" aria-current="page">Início</a>
+          </li>
+          <li>
+            <a class="navbar__link" href="pages/help.html">Como Ajudar</a>
+          </li>
+          <li>
+            <a class="button button--nav" href="pages/donations.html"
+              >Doe Agora</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section id="home" class="hero hero--home" aria-labelledby="home-title">
+        <img
+          class="hero__image hero__image--full"
+          src="assets/images/hero-image.jpg"
+          alt="Dois cachorros filhotes deitados em uma rua empoeirada"
+          width="4997"
+          height="2277"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="hero__content hero__content--overlay">
+          <h1 id="home-title">Ajudar um animal é mudar o mundo dele</h1>
         </div>
-      </header>
-    </div>
+      </section>
+    </header>
 
-    <main>
-      <p class="intro-text">
-        A existência de animais abandonados em espaços urbanos é um problema
-        extremamente negligenciado, mas a mudança começa com a informação. Cada
-        animal de rua merece ser visto, cuidado e protegido, e você pode fazer
-        parte disso.
-      </p>
+    <main class="page-main">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <h2 id="intro-title" class="visually-hidden">Sobre a causa</h2>
+        <p class="intro-section__text">
+          A existência de animais abandonados em espaços urbanos é um problema
+          extremamente negligenciado, mas a mudança começa com a informação.
+          Cada animal de rua merece ser visto, cuidado e protegido, e você pode
+          fazer parte disso.
+        </p>
+      </section>
 
-      <div class="cards-container">
-        <div class="card">
-          <a href="pages/help.html"
-            ><img
-              class="filler"
+      <section
+        class="grid grid--cards"
+        aria-label="Principais formas de ajudar"
+      >
+        <article class="card">
+          <a class="card__link" href="pages/help.html">
+            <img
+              class="card__image"
               src="assets/images/cats.jpg"
-              alt="dois gatinhos
-            comendo ração do chão"
+              alt="Dois gatinhos comendo ração do chão"
+              width="1127"
+              height="751"
               loading="lazy"
+              decoding="async"
             />
-            <p>Pequenas ações salvam grandes vidas</p>
+            <h2 class="card__title">Pequenas ações salvam grandes vidas</h2>
           </a>
-        </div>
-        <div class="card">
-          <a href="pages/donations.html"
-            ><img
-              class="filler"
-              src="assets/images/dog.jpg"
-              alt="cachorro em um abrigo sendo acariciado"
-              loading="lazy"
-            />
-            <p>Apoie organizações que lutam pela causa</p>
-          </a>
-        </div>
-      </div>
+        </article>
 
-      <h1 class="title1">Os dados não mentem</h1>
-      <p class="subtitle">Clique para saber mais sobre o problema</p>
-      <div class="fact-container">
-        <button id="fact-button" class="button fact-button">Fatos</button>
-        <p id="fact" class="fact"></p>
-      </div>
+        <article class="card">
+          <a class="card__link" href="pages/donations.html">
+            <img
+              class="card__image"
+              src="assets/images/dog.jpg"
+              alt="Cachorro em um abrigo sendo acariciado"
+              width="7952"
+              height="5304"
+              loading="lazy"
+              decoding="async"
+            />
+            <h2 class="card__title">Apoie organizações que lutam pela causa</h2>
+          </a>
+        </article>
+      </section>
+
+      <section class="facts-section" aria-labelledby="facts-title">
+        <h2 id="facts-title" class="section-heading">Os dados não mentem</h2>
+        <p class="section-subtitle">Clique para saber mais sobre o problema</p>
+        <div class="fact-panel">
+          <button id="fact-button" class="button button--fact" type="button">
+            Fatos
+          </button>
+          <p id="fact" class="fact-panel__text" aria-live="polite"></p>
+        </div>
+      </section>
     </main>
 
-    <footer class="contact-section">
-      <h2 class="title2">Entre em contato!</h2>
-      <form>
-        <label>
-          Seu nome:
-          <input
-            type="text"
-            name="name"
-            placeholder="Insira seu nome"
-            required
-          />
-        </label>
-        <label>
-          Seu email:
-          <input
-            type="email"
-            name="email"
-            placeholder="Insira seu melhor e-mail"
-            required
-          />
-        </label>
-        <label>
-          Sua mensagem:
-          <textarea
-            name="message"
-            placeholder="Insira sua mensagem"
-            required
-          ></textarea>
-        </label>
+    <footer class="footer" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="footer__title">Entre em contato!</h2>
+      <form class="contact-form">
+        <fieldset>
+          <legend class="visually-hidden">Formulário de contato</legend>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-name"
+              >Seu nome:</label
+            >
+            <input
+              id="contact-name"
+              class="form-field__control"
+              type="text"
+              name="name"
+              placeholder="Insira seu nome"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-email"
+              >Seu email:</label
+            >
+            <input
+              id="contact-email"
+              class="form-field__control"
+              type="email"
+              name="email"
+              placeholder="Insira seu melhor e-mail"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-message">
+              Sua mensagem:
+            </label>
+            <textarea
+              id="contact-message"
+              class="form-field__control form-field__control--textarea"
+              name="message"
+              placeholder="Insira sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button--send" type="button">Enviar</button>
+        </fieldset>
       </form>
-      <button id="send-button" type="submit" class="button send-button">
-        Enviar
-      </button>
-      <p class="copy">&copy; 2026 | Street Paws</p>
+      <p class="footer__copy">&copy; 2026 | Street Paws</p>
     </footer>
   </body>
 </html>

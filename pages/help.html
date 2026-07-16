@@ -1,217 +1,264 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <title>Street Paws</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
-    <script src="/script.js" defer></script>
+    <title>Como Ajudar | Street Paws</title>
+    <meta
+      name="description"
+      content="Veja ações práticas para ajudar animais em situação de rua, denunciar maus-tratos, apoiar adoções e cobrar políticas públicas."
+    />
+    <meta property="og:title" content="Como Ajudar | Street Paws" />
+    <meta
+      property="og:description"
+      content="Formas conscientes e responsáveis de contribuir com a proteção animal."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../assets/images/cats.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anta&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="../script.js" defer></script>
   </head>
 
   <body>
-    <div>
-      <header">
-        <nav class="navbar" id="navbar">
+    <header class="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          class="navbar__logo"
+          href="../index.html"
+          aria-label="Street Paws - início"
+        >
           <img
-            class="navbarLogo"
-            src="/assets/images/logo2.png"
-            alt="A text saying 'Street Paws' with the icon of an animal's paw on the right"
-            loading="lazy"
+            class="site-logo"
+            src="../assets/images/logo2.png"
+            alt="Street Paws"
+            width="1920"
+            height="1280"
+            decoding="async"
           />
-          <ul>
-            <li class="other">
-              <a href="/index.html">Início</a>
-            </li>
-            <li class="other">
-              <a href="#secondary-hero">Como Ajudar</a>
-            </li>
-            <li id="donations" class="button donations-button">
-              <a href="/pages/donations.html">Doe Agora</a>
+        </a>
+        <ul class="navbar__list">
+          <li>
+            <a class="navbar__link" href="../index.html">Início</a>
+          </li>
+          <li>
+            <a class="navbar__link" href="#help" aria-current="page"
+              >Como Ajudar</a
+            >
+          </li>
+          <li>
+            <a class="button button--nav" href="donations.html">Doe Agora</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="help" class="hero hero--split" aria-labelledby="help-title">
+        <img
+          class="hero__image hero__image--split"
+          src="../assets/images/cats.jpg"
+          alt="Dois gatinhos comendo ração do chão"
+          width="1127"
+          height="751"
+          loading="eager"
+          decoding="async"
+        />
+        <div class="hero__content hero__content--split">
+          <h1 id="help-title">Pequenas ações salvam grandes vidas</h1>
+          <p>
+            Cuidar dos animais em situação de abandono é um dever social. Veja
+            formas de contribuir de maneira consciente e responsável, seja ao
+            acolher um animal, apoiar organizações ou cobrar políticas públicas.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section
+        class="band band--alt band--split"
+        aria-labelledby="daily-actions-title"
+      >
+        <div class="band__content">
+          <h2 id="daily-actions-title" class="band__title">
+            Ações simples no dia a dia
+          </h2>
+          <ul class="feature-list">
+            <li>Divulgue animais para adoção nas suas redes sociais.</li>
+            <li>Fale sobre o assunto com amigos e familiares.</li>
+            <li>Ensine crianças a respeitarem e cuidarem dos animais.</li>
+            <li>Denuncie casos de maus-tratos ou abandono.</li>
+            <li>
+              Sempre que puder, ofereça água ou comida a um animal de rua.
             </li>
           </ul>
-        </nav>
-        <div id="secondary-hero" class="secondary-hero">
-          <img
-            class="hero-image2"
-            src="/assets/images/cats.jpg"
-            alt="dois gatinhos comendo ração do chão"
-            loading="lazy"
-          />
-          />
-          <div class="hero-text2">
-            <h1 style="margin-bottom: 30px">
-              Pequenas ações salvam grandes vidas
-            </h1>
-            <p>
-              Cuidar dos animais em situação de abandono é um dever social. Aqui
-              você verá formas de contribuir de maneira consciente e
-              responsável, seja ao encontrar um animal, apoiar organizações ou
-              cobrar políticas públicas.
-            </p>
-          </div>
         </div>
-      </header>
-    </div>
+        <img
+          class="band__image"
+          src="../assets/images/topic1.jpg"
+          alt="Pessoa acariciando um cachorro"
+          width="6000"
+          height="4000"
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
 
-    <div class="content-container0">
-      <div class="content0">
-        <h1 style="color: #588d40; font-size: clamp(1.8rem, 2vw, 2.2rem)">
-          Ações simples no dia a dia
-        </h1>
-        <ul class="total-list">
-          <li class="list">
-            Divulgue animais para adoção nas suas redes sociais.
-          </li>
-          <li class="list">Fale sobre o assunto com amigos e familiares.</li>
-          <li class="list">
-            Ensine crianças a respeitarem e cuidarem dos animais.
-          </li>
-          <li class="list">Denuncie casos de maus-tratos ou abandono.</li>
-          <li class="list">
-            Sempre que puder, ofereça água ou comida a um animal de rua.
-          </li>
-        </ul>
-      </div>
-      <img
-        class="filler-content0"
-        src="/assets/images/topic1.jpg"
-        alt="pessoa acariciando um cachorro"
-        loading="lazy"
-      />
-    </div>
+      <section
+        class="band band--split band--image-first"
+        aria-labelledby="street-animal-title"
+      >
+        <img
+          class="band__image"
+          src="../assets/images/topic2.jpg"
+          alt="Gatinho abandonado em uma rua suja"
+          width="5184"
+          height="3456"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="band__content">
+          <h2 id="street-animal-title" class="band__title">
+            O que fazer ao ver um animal de rua
+          </h2>
+          <ul class="feature-list">
+            <li>
+              Avalie: ele está ferido, assustado, magro ou parece ter dono?
+            </li>
+            <li>
+              Ferido? Leve a um veterinário, pois há clínicas sociais em muitas
+              cidades.
+            </li>
+            <li>
+              Tem dono? Divulgue em redes e grupos locais ou procure por um
+              microchip.
+            </li>
+            <li>
+              Pode acolher? Abrigue temporariamente até achar um adotante.
+            </li>
+            <li>Não pode? Tire fotos, informe a localização e compartilhe.</li>
+          </ul>
+        </div>
+      </section>
 
-    <div class="content-container">
-      <img
-        class="filler-content"
-        src="/assets/images/topic2.jpg"
-        alt="gatinho abandonado em uma rua suja"
-        loading="lazy"
-      />
-      <div class="content">
-        <h1 style="color: #588d40; font-size: clamp(1.8rem, 2vw, 2.2rem)">
-          O que fazer ao ver um animal de rua
-        </h1>
-        <ul class="total-list">
-          <li class="list">
-            Avalie: Ele está ferido, assustado, magro ou parece ter dono?
-          </li>
-          <li class="list">
-            Ferido? Leve a um veterinário (há clínicas sociais em muitas
-            cidades).
-          </li>
-          <li class="list">
-            Tem dono? Divulgue em redes e grupos locais ou procure por um
-            microchip.
-          </li>
-          <li class="list">
-            Pode acolher? Abrigue temporariamente até achar um adotante.
-          </li>
-          <li class="list">
-            Não pode? Tire fotos, informe a localização e compartilhe.
-          </li>
-        </ul>
-      </div>
-    </div>
+      <section
+        class="band band--alt band--split"
+        aria-labelledby="public-policy-title"
+      >
+        <div class="band__content">
+          <h2 id="public-policy-title" class="band__title">
+            Cobre políticas públicas e fiscalização
+          </h2>
+          <ul class="feature-list">
+            <li>Cobre campanhas de castração gratuitas e acessíveis.</li>
+            <li>Reivindique centros de acolhimento e programas de adoção.</li>
+            <li>Exija leis mais rígidas contra maus-tratos e abandono.</li>
+            <li>
+              Participe de audiências públicas ou petições online sobre o tema.
+            </li>
+            <li>Fale com vereadores ou deputados da sua região.</li>
+          </ul>
+        </div>
+        <img
+          class="band__image"
+          src="../assets/images/topic3.jpg"
+          alt="Pixação em uma parede cinza"
+          width="6000"
+          height="4000"
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
 
-    <div class="content-container0">
-      <div class="content0">
-        <h1 style="color: #588d40; font-size: clamp(1.8rem, 2vw, 2.2rem)">
-          Cobre políticas públicas e fiscalização
-        </h1>
-        <ul class="total-list">
-          <li class="list">
-            Cobre campanhas de castração gratuitas e acessíveis.
-          </li>
-          <li class="list">
-            Reivindique centros de acolhimento e programas de adoção.
-          </li>
-          <li class="list">
-            Exija leis mais rígidas contra maus-tratos e abandono.
-          </li>
-          <li class="list">
-            Participe de audiências públicas ou petições online sobre o tema.
-          </li>
-          <li class="list">Fale com vereadores ou deputados da sua região.</li>
-        </ul>
-      </div>
-      <img
-        class="filler-content0"
-        src="/assets/images/topic3.jpg"
-        alt="pixação em uma parede cinza"
-        loading="lazy"
-      />
-    </div>
+      <section
+        class="band band--split band--image-first"
+        aria-labelledby="support-title"
+      >
+        <img
+          class="band__image"
+          src="../assets/images/topic4.jpg"
+          alt="Profissionais da saúde cuidando de um cachorro"
+          width="5392"
+          height="3588"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="band__content">
+          <h2 id="support-title" class="band__title">
+            <a class="donations-link" href="donations.html">
+              Apoie quem já está lutando pela causa
+            </a>
+          </h2>
+          <ul class="feature-list">
+            <li>Doe dinheiro, ração, medicamentos ou materiais de limpeza.</li>
+            <li>Divulgue campanhas de adoção ou arrecadação.</li>
+            <li>Seja voluntário, mesmo que por poucas horas semanais.</li>
+            <li>Adote com responsabilidade, se tiver condições.</li>
+            <li>
+              Apoie iniciativas locais, que muitas vezes passam despercebidas.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-    <div class="content-container">
-      <img
-        class="filler-content"
-        src="/assets/images/topic4.jpg"
-        alt="profissionais da saúde cuidando de um cachorro"
-        loading="lazy"
-      />
-      <div class="content">
-        <h1 style="font-size: clamp(1.8rem, 2vw, 2.2rem)">
-          <a class="donations-link" href="donations.html"
-            >Apoie quem já está lutando pela causa</a
-          >
-        </h1>
-        <ul class="total-list">
-          <li class="list">
-            Doe dinheiro, ração, medicamentos ou materiais de limpeza.
-          </li>
-          <li class="list">Divulgue campanhas de adoção ou arrecadação.</li>
-          <li class="list">
-            Seja voluntário, mesmo que por poucas horas semanais.
-          </li>
-          <li class="list">Adote com responsabilidade, se tiver condições.</li>
-          <li class="list">
-            Apoie iniciativas locais, que muitas vezes passam despercebidas.
-          </li>
-        </ul>
-      </div>
-    </div>
+    <footer class="footer" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="footer__title">Entre em contato!</h2>
+      <form class="contact-form">
+        <fieldset>
+          <legend class="visually-hidden">Formulário de contato</legend>
 
-    <div class="contact-section">
-      <h2 class="title2">Entre em contato!</h2>
-      <form>
-        <label>
-          Seu nome:
-          <input
-            type="text"
-            name="name"
-            placeholder="Insira seu nome"
-            required
-          />
-        </label>
-        <label>
-          Seu email:
-          <input
-            type="email"
-            name="email"
-            placeholder="Insira seu melhor e-mail"
-            required
-          />
-        </label>
-        <label>
-          Sua mensagem:
-          <textarea
-            name="message"
-            placeholder="Insira sua mensagem"
-            required
-          ></textarea>
-        </label>
+          <div class="form-field">
+            <label class="form-field__label" for="contact-name"
+              >Seu nome:</label
+            >
+            <input
+              id="contact-name"
+              class="form-field__control"
+              type="text"
+              name="name"
+              placeholder="Insira seu nome"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-email"
+              >Seu email:</label
+            >
+            <input
+              id="contact-email"
+              class="form-field__control"
+              type="email"
+              name="email"
+              placeholder="Insira seu melhor e-mail"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-message">
+              Sua mensagem:
+            </label>
+            <textarea
+              id="contact-message"
+              class="form-field__control form-field__control--textarea"
+              name="message"
+              placeholder="Insira sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button button--send" type="button">Enviar</button>
+        </fieldset>
       </form>
-      <button id="send-button" class="button send-button" type="submit">
-        Enviar
-      </button>
-      <p class="copy">&copy; 2026 | Street Paws</p>
-    </div>
+      <p class="footer__copy">&copy; 2026 | Street Paws</p>
+    </footer>
   </body>
 </html>
