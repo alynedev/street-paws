@@ -31,7 +31,7 @@
 
 .fact-panel__text {
   margin-top: 3%;
-  color: var(--color-page);
+  color: var(--color-text-light);
   text-align: center;
   font-size: clamp(1.4em, 2.4vw, 2.4em);
 }

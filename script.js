@@ -23,3 +23,23 @@ function initFactRotator() {
 }
 
 initFactRotator();
+
+const hamburgerButton = document.getElementById("navbar__button");
+const navbarMenu = document.getElementById("navbar__list");
+const navbarLinks = document.querySelectorAll(".navbar__link");
+
+hamburgerButton.addEventListener("click", () => {
+  hamburgerButton.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
+
+  const isOpen = hamburgerButton.classList.contains("active");
+  hamburgerButton.setAttribute("aria-expanded", isOpen);
+});
+
+navbarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerButton.classList.remove("active");
+    navbarMenu.classList.remove("active");
+    hamburgerButton.setAttribute("aria-expanded", "false");
+  });
+});

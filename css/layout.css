@@ -10,7 +10,7 @@
 .navbar {
   position: fixed;
   inset: 0 0 auto;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,6 +53,22 @@
   transform: scale(1.05);
 }
 
+.navbar__button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  gap: 5px;
+}
+
+.navbar__button-bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-page);
+  transition: var(--transition);
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -65,7 +81,7 @@
 .hero--split {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: flex-start;
-  gap: 10px;
+  gap: 1%;
 }
 
 .hero__image {
@@ -92,14 +108,14 @@
 }
 
 .hero__content--split {
-  margin: 2rem 2rem 2rem;
+  margin: 8% 4%;
   color: var(--color-secondary);
   text-align: left;
   font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
 .hero__content--split h1 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 6%;
 }
 
 .hero__content--split p {
@@ -119,12 +135,11 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 40%;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .band--image-first {
   grid-template-columns: 40% minmax(0, 1fr);
-  gap: 45px;
 }
 
 .band__title {
@@ -168,6 +183,6 @@
 }
 
 .footer__copy {
-  margin-top: 5%;
+  margin-top: 3rem;
   font-size: 1.1em;
 }

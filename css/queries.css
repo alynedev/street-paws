@@ -3,8 +3,8 @@
   .hero__content--overlay {
     align-self: start;
     justify-self: stretch;
-    min-height: 78%;
-    padding-top: 15%;
+    height: 100%;
+    padding-top: 20%;
     text-align: center;
     text-shadow: #302e2c 1px 0 2px;
     background: none;
@@ -14,27 +14,39 @@
   .hero--split {
     grid-template-columns: 1fr;
     overflow: hidden;
+    margin-top: 2rem;
+  }
+
+  .hero__image--full {
+    aspect-ratio: 5/3;
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero__image--split,
   .hero__content--split {
-    grid-area: 1 / 1;
+    grid-area: 2 / 1;
   }
 
   .hero__content--split {
     align-self: start;
     margin: 0;
-    padding: 10% 4% 20%;
+    margin-top: 2rem;
+    padding: 15% 2%;
     color: var(--color-page);
     text-align: center;
     text-shadow: #302e2c 1px 0 2px;
     backdrop-filter: blur(3px);
     font-size: clamp(0.8rem, 3.6vw, 4rem);
+    height: 100%;
   }
 
-  .hero__content--split h1,
-  .hero__content--split p {
+  .hero__content--split h1 {
     color: var(--color-text-light);
+  }
+
+  .hero__content--split p {
+    font-size: 0%;
   }
 
   .card__title {
@@ -59,24 +71,43 @@
 
 /* Mobile */
 @media screen and (max-width: 512px) {
-  .navbar {
-    justify-content: center;
-    min-height: 1rem;
-    padding: 0.8em;
+  .navbar__button {
+    display: flex;
+  }
+
+  .navbar__list {
+    position: fixed;
+    right: -100%;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 40%;
+    margin-top: 12rem;
     text-align: center;
+    justify-content: space-around;
+    transition: var(--transition);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    z-index: -1000;
+    box-shadow: 0 5px 10px var(--color-shadow);
   }
 
-  .navbar__logo {
-    display: none;
+  .navbar__list.active {
+    right: 0;
   }
 
-  .navbar__link {
-    padding: 1em 0.4em;
+  .navbar__button.active .navbar__button-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar__button.active .navbar__button-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar__button.active .navbar__button-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .button--nav {
     margin-left: 0.4em;
-    padding: 0.6em;
+    margin-top: 1rem;
   }
 
   .hero__image {
